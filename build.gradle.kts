@@ -4,7 +4,7 @@ plugins {
     id("org.jetbrains.intellij.platform") version "2.5.0"
 }
 
-group = "com.camel_case"
+group = "com.namingstyle.converter"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -32,6 +32,12 @@ intellijPlatform {
             sinceBuild = "241"
             untilBuild = "251.*"
         }
+
+        description = """
+            A powerful IntelliJ IDEA plugin that supports naming style conversion for multiple programming languages.
+            Supports camelCase, PascalCase, snake_case, and kebab-case conversions with intelligent recognition
+            and one-click cycling through all naming styles.
+        """.trimIndent()
 
         changeNotes = """
       Initial version

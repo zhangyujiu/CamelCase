@@ -1,1 +1,1 @@
-rootProject.name = "CamelCase"
+rootProject.name = "NamingStyleConverter"

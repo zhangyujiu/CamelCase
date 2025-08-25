@@ -1,11 +1,11 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
-    <id>com.camel_case.CamelCase</id>
+    <id>com.namingstyle.converter.NamingStyleConverter</id>
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
-    <name>CamelCase</name>
+    <name>Naming Style Converter</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
     <vendor url="https://github.com">CamelCase Plugin</vendor>
@@ -13,28 +13,28 @@
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    <h3>命名风格转换插件</h3>
-    <p>一个强大的IntelliJ IDEA插件，支持多种编程语言的命名风格转换。</p>
+    <h3>Naming Style Converter</h3>
+    <p>A powerful IntelliJ IDEA plugin that supports naming style conversion for multiple programming languages.</p>
     
-    <h4>支持的命名风格：</h4>
+    <h4>Supported Naming Styles:</h4>
     <ul>
-        <li><strong>驼峰命名</strong> (camelCase) - 首字母小写，后续单词首字母大写</li>
-        <li><strong>帕斯卡命名</strong> (PascalCase) - 所有单词首字母大写</li>
-        <li><strong>下划线命名</strong> (snake_case) - 单词间用下划线分隔，全小写</li>
-        <li><strong>短横线命名</strong> (kebab-case) - 单词间用短横线分隔，全小写</li>
+        <li><strong>Camel Case</strong> (camelCase) - First letter lowercase, subsequent words capitalized</li>
+        <li><strong>Pascal Case</strong> (PascalCase) - All words capitalized</li>
+        <li><strong>Snake Case</strong> (snake_case) - Words separated by underscores, all lowercase</li>
+        <li><strong>Kebab Case</strong> (kebab-case) - Words separated by hyphens, all lowercase</li>
     </ul>
     
-    <h4>功能特点：</h4>
+    <h4>Key Features:</h4>
     <ul>
-        <li>智能识别当前命名风格</li>
-        <li>一键循环转换所有命名风格</li>
-        <li>支持选中文本转换</li>
-        <li>支持光标位置单词转换</li>
-        <li>集成到右键菜单和编辑菜单</li>
+        <li>Intelligent recognition of current naming style</li>
+        <li>One-click cycling through all naming styles</li>
+        <li>Support for selected text conversion</li>
+        <li>Support for cursor position word conversion</li>
+        <li>Integrated into context menu and edit menu</li>
     </ul>
     
-    <h4>使用方法：</h4>
-    <p>选中要转换的文本或将光标定位到单词上，然后按下 <strong>Ctrl+Alt+Q</strong> 快捷键进行循环转换，或使用右键菜单选择转换选项。</p>
+    <h4>Usage:</h4>
+    <p>Select the text to convert or position the cursor on a word, then press <strong>Ctrl+Alt+Q</strong> shortcut to cycle through conversions, or use the right-click menu to select conversion options.</p>
     ]]></description>
 
     <!-- Product and plugin compatibility requirements.
