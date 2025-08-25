@@ -1,0 +1,54 @@
+# 命名风格转换测试示例
+
+以下是一些测试用例，可以用来验证插件的转换功能：
+
+## 基础测试用例
+hello_world
+HelloWorld
+hello-world
+hello world
+getUserName
+user_id
+ApiKey
+max-width
+background-color
+
+## 复杂测试用例
+convert_to_camel_case
+ConvertToPascalCase
+convert_to_kebab_case
+CONVERT TO SNAKE CASE
+getHTMLElementById
+XML_HTTP_REQUEST
+api-response-handler
+user_profile_settings
+
+## 边界测试用例
+a
+A
+a_b
+A_B
+a-b
+A-B
+leading_underscore
+trailing_underscore_
+-leading-dash
+trailing-dash-
+
+## 数字和特殊字符测试
+user123
+user_123_name
+api-v2-endpoint
+HTTP2Protocol
+version1_0_0
+test-case-123
+
+使用方法：
+1. 选中上面任意一个测试用例
+2. 按下 Ctrl+Alt+C 快捷键进行循环转换：
+   - 第1次按下：转换为驼峰命名 (camelCase)
+   - 第2次按下：转换为帕斯卡命名 (PascalCase)
+   - 第3次按下：转换为下划线命名 (snake_case)
+   - 第4次按下：转换为短横线命名 (kebab-case)
+   - 第5次按下：回到驼峰命名，继续循环...
+3. 或者右键选择"循环切换命名风格"菜单

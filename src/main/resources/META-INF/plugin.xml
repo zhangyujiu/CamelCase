@@ -1,0 +1,62 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.camel_case.CamelCase</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>CamelCase</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor url="https://github.com">CamelCase Plugin</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+    <h3>命名风格转换插件</h3>
+    <p>一个强大的IntelliJ IDEA插件，支持多种编程语言的命名风格转换。</p>
+    
+    <h4>支持的命名风格：</h4>
+    <ul>
+        <li><strong>驼峰命名</strong> (camelCase) - 首字母小写，后续单词首字母大写</li>
+        <li><strong>帕斯卡命名</strong> (PascalCase) - 所有单词首字母大写</li>
+        <li><strong>下划线命名</strong> (snake_case) - 单词间用下划线分隔，全小写</li>
+        <li><strong>短横线命名</strong> (kebab-case) - 单词间用短横线分隔，全小写</li>
+    </ul>
+    
+    <h4>功能特点：</h4>
+    <ul>
+        <li>智能识别当前命名风格</li>
+        <li>一键循环转换所有命名风格</li>
+        <li>支持选中文本转换</li>
+        <li>支持光标位置单词转换</li>
+        <li>集成到右键菜单和编辑菜单</li>
+    </ul>
+    
+    <h4>使用方法：</h4>
+    <p>选中要转换的文本或将光标定位到单词上，然后按下 <strong>Ctrl+Alt+C</strong> 快捷键进行循环转换，或使用右键菜单选择转换选项。</p>
+    ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+
+    <!-- Actions -->
+    <actions>
+        <!-- 循环命名风格转换 -->
+        <action id="CamelCase.CycleNamingStyle" 
+                class="com.camel_case.camelcase.CycleNamingStyleAction" 
+                text="循环切换命名风格" 
+                description="通过单一快捷键循环切换不同的命名风格：camelCase → PascalCase → snake_case → kebab-case">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <add-to-group group-id="EditMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt C"/>
+        </action>
+    </actions>
+</idea-plugin>
