@@ -4,7 +4,7 @@
 
 ## 功能特性
 
-- ✅ **一键循环转换** - 通过 **Ctrl+Alt+C** 快捷键在四种命名风格间循环切换
+- ✅ **一键循环转换** - 通过 **Ctrl+Alt+Q** 快捷键在四种命名风格间循环切换
 - ✅ **智能风格检测** - 自动识别当前命名风格并转换为下一种风格
 - ✅ **四种命名风格支持**：
   - 驼峰命名 (camelCase)
@@ -21,7 +21,7 @@
 
 ### 方法一：快捷键操作（推荐）
 1. 选中要转换的文本（或将光标定位到单词上）
-2. 按下 **Ctrl+Alt+C** 快捷键进行循环转换
+2. 按下 **Ctrl+Alt+Q** 快捷键进行循环转换
 3. 支持在驼峰、帕斯卡、下划线、短横线命名风格之间循环切换
 4. 每次按下快捷键会切换到下一种命名风格
 5. 多次按下快捷键可循环切换不同命名风格：
@@ -44,7 +44,7 @@
 ## 转换示例
 
 ### 循环转换流程
-以 `hello_world` 为例，多次按 `Ctrl+Alt+C`：
+以 `hello_world` 为例，多次按 `Ctrl+Alt+Q`：
 
 ```
 hello_world  →  helloWorld  →  HelloWorld  →  hello_world  →  hello-world  →  helloWorld ...
@@ -65,7 +65,7 @@ hello_world  →  helloWorld  →  HelloWorld  →  hello_world  →  hello-worl
 - **开发语言**: Kotlin
 - **构建工具**: Gradle
 - **插件框架**: IntelliJ Platform Plugin SDK
-- **支持版本**: IntelliJ IDEA 2025.1+
+- **支持版本**: IntelliJ IDEA 2024.1+
 
 ## 项目结构
 

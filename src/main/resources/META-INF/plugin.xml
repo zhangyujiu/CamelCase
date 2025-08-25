@@ -34,7 +34,7 @@
     </ul>
     
     <h4>使用方法：</h4>
-    <p>选中要转换的文本或将光标定位到单词上，然后按下 <strong>Ctrl+Alt+C</strong> 快捷键进行循环转换，或使用右键菜单选择转换选项。</p>
+    <p>选中要转换的文本或将光标定位到单词上，然后按下 <strong>Ctrl+Alt+Q</strong> 快捷键进行循环转换，或使用右键菜单选择转换选项。</p>
     ]]></description>
 
     <!-- Product and plugin compatibility requirements.
@@ -56,7 +56,7 @@
                 description="通过单一快捷键循环切换不同的命名风格：camelCase → PascalCase → snake_case → kebab-case">
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
             <add-to-group group-id="EditMenu" anchor="last"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt C"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt Q"/>
         </action>
     </actions>
 </idea-plugin>
